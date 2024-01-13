@@ -6,14 +6,13 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 02:40:25 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 02:40:26 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 19:40:43 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
 #include "../libft/libft.h"
 #include "../minilibx/mlx.h"
-#include <unistd.h>
 
 int	keyboard(int keycode, t_map *map)
 {

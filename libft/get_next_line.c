@@ -6,13 +6,11 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 01:30:06 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 01:30:07 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 19:45:59 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <unistd.h>
 
 static inline void	*ft_free_stash(char **stash, int create_line)
 {
@@ -82,33 +80,4 @@ char	*get_next_line(int fd)
 		}
 	}
 	return (ft_free_stash(&stash, 1));
-}
-
-char	*get_next_line_bonus(int fd)
-{
-	char		buf[BUFFER_SIZE + 1];
-	int			ret;
-	static char	*stash[4096];
-	char		*line;
-	char		*res;
-
-	ret = BUFFER_SIZE;
-	while (ret > 0)
-	{
-		ret = read(fd, buf, BUFFER_SIZE);
-		if ((ret == 0 && !stash[fd]) || ret == -1)
-			return (ft_free_stash(&stash[fd], 0));
-		buf[ret] = '\0';
-		res = ft_strjoin(stash[fd], buf);
-		ft_free_stash(&stash[fd], 0);
-		stash[fd] = res;
-		if (ft_strchr(stash[fd], '\n'))
-		{
-			line = ft_extract_line(stash[fd]);
-			if (!line)
-				return (ft_free_stash(&stash[fd], 0));
-			return (stash[fd] = ft_recreate_stash(stash[fd]), line);
-		}
-	}
-	return (ft_free_stash(&stash[fd], 1));
 }

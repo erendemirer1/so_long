@@ -6,12 +6,11 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 01:29:50 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 01:29:51 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 19:45:45 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(const char *s1)
 {

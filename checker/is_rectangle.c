@@ -6,13 +6,12 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 00:11:13 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 00:11:14 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 19:39:39 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
 #include "../libft/libft.h"
-#include <unistd.h>
 
 void	is_rectangle(t_map *map)
 {

@@ -6,7 +6,7 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 01:30:11 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 01:30:12 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 19:44:49 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdarg.h>
 # include <unistd.h>
+# include <stdlib.h>
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
@@ -35,7 +36,6 @@ char	**ft_split(char const *s, char c);
 # endif
 
 char	*get_next_line(int fd);
-char	*get_next_line_bonus(int fd);
 
 //printf
 int		ft_printf(const char *str, ...);

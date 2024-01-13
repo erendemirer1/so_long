@@ -6,7 +6,7 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 00:11:09 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 00:11:10 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 15:43:20 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,5 @@ void	is_c_e_p(t_map *map)
 		}
 	}
 	if (map->c_cont <= 0 || map->e_cont != 1 || map->p_cont != 1)
-		return (write(2, "C_E_P Error\n", 11), exitt(map));
+		return (write(2, "C_E_P Hatasi\n", 14), exitt(map));
 }

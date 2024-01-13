@@ -6,11 +6,11 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 01:29:58 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 01:29:59 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 19:43:05 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

@@ -6,24 +6,20 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 02:40:08 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 03:05:28 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 19:46:30 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
 #include "../libft/libft.h"
 #include "../minilibx/mlx.h"
-#include <stdlib.h>
-#include <unistd.h>
 
 void	exitt(t_map *map)
 {
 	free_malloc(map->mav, 0);
 	free_malloc(map->virtual_map, 0);
-	if (!map->win)
+	if (map->win)
 		mlx_destroy_window(map->ptr, map->win);
-	if (!map->ptr)
-		free(map->ptr);
 	exit(1);
 }
 
@@ -42,7 +38,7 @@ int	main(int ac, char **av)
 	t_map	map;
 
 	if (ac != 2)
-		return (write(1, "ac != 2\n", 8), 0);
+		return (write(1, "Arguman sayisi 2 değil!\n", 8), 0);
 	init(&map);
 	checker(av, &map);
 	so_long(&map);

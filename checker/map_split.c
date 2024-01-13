@@ -6,15 +6,14 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 00:11:15 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 02:51:42 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 19:27:17 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../so_long.h"
 #include "../libft/libft.h"
-#include <stdlib.h>
-#include <unistd.h>
 #include <fcntl.h>
+#include <stdlib.h>
 
 void	map_split(t_map *map)
 {

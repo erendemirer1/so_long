@@ -6,12 +6,11 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 00:11:27 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 00:33:32 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 19:45:40 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	**free_malloc(char **tab, int i)
 {
