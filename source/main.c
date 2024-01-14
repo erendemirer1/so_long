@@ -6,7 +6,7 @@
 /*   By: edemirer <edemirer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 02:40:08 by edemirer          #+#    #+#             */
-/*   Updated: 2024/01/13 19:46:30 by edemirer         ###   ########.fr       */
+/*   Updated: 2024/01/13 20:47:13 by edemirer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	init(t_map *map)
 	map->ctrl_c_cont = 0;
 	map->door_accessible = 0;
 	map->number_of_steps = 0;
+	map->win = NULL;
 }
 
 int	main(int ac, char **av)
